@@ -1,0 +1,15 @@
+{% extends 'crm/base.html' %} {% load static %}
+
+<html>
+  {% block content %}
+
+  <h3>Homepage!</h3>
+
+  <p>Welcome to my website!</p>
+
+  <img src='{% static 'images/me.jpg'%}'/>
+
+  <a href="{% url 'create-task'%}"> Create a task</a>
+
+  {% endblock %}
+</html>
